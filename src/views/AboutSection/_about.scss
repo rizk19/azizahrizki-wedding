@@ -1,0 +1,453 @@
+.wrapper {
+  display: flex;
+  position: relative;
+  text-align: center;
+  flex-flow: row wrap;
+  overflow-x: scroll;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.main-title {
+  height: 80px;
+  border-top: 0.8rem solid rgba($color-primary-dark, 0.5);
+  border-bottom: 1rem solid rgba($color-primary-dark, 0.5);
+  margin-top: 0rem;
+  background-color: $color-primary-light-1;
+  font-family: "Trocchi", serif;
+  color: $color-primary-dark;
+  font-size: 2rem;
+  font-weight: 100;
+  text-align: center;
+}
+
+.main {
+  text-align: left;
+  background: radial-gradient($color-primary-semilight-3 3px, transparent 4px),
+    radial-gradient($color-primary-semilight-3 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(
+      45deg,
+      transparent 74px,
+      transparent 75px,
+      #a4a4a4 75px,
+      #a4a4a4 76px,
+      transparent 77px,
+      transparent 109px
+    ),
+    linear-gradient(
+      -45deg,
+      transparent 75px,
+      transparent 76px,
+      #a4a4a4 76px,
+      #a4a4a4 77px,
+      transparent 78px,
+      transparent 109px
+    ),
+    #fff;
+  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  height: 670px;
+}
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction 
+         and if we allow the items to wrap 
+       * Remember this is the same as:
+       * flex-direction: row;
+       * flex-wrap: wrap;
+       */
+  flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: center;
+
+  padding: 1.5rem;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  position: relative;
+  margin-top: 10px;
+  min-width: 200px;
+  width: 45%;
+  margin: 5px;
+}
+
+.flex-item-wrapperbox-left {
+  width: 100%;
+  height: 100%;
+  padding: 8.5rem 2rem 2rem 2rem;
+}
+
+.flex-item-wrapperbox-right {
+  width: 100%;
+  height: 100%;
+  padding: 8.5rem 2rem 2rem 2rem;
+}
+
+.flex-item-1 {
+  position: absolute;
+  background-image: url(../../assets/img/frame-transparent-greeny-1side.png);
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+}
+
+.flex-item-2 {
+  position: absolute;
+  background-image: url(../../assets/img/frame-transparent-greeny-1side.png);
+  background-size: cover;
+  margin-top: -5px;
+  width: 100%;
+  height: 550px;
+  transform: rotate(180deg);
+  /* All browsers support */
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+
+.flex-item-2 * {
+  transform: rotate(180deg);
+  /* All browsers support */
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+
+.flex-item-textbox-left {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  height: 270px;
+}
+
+.flex-item-textbox-right {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  height: 270px;
+  width: 80%;
+}
+
+.flex-item-name {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  bottom: 1.5rem;
+  font-family: "IM Fell Great Primer", serif;
+  font-size: 2rem;
+  font-weight: 200;
+  color: darkgoldenrod;
+}
+
+.flex-item-subname {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  bottom: 1rem;
+  font-family: "IM Fell Great Primer", serif;
+  font-size: 1rem;
+  font-weight: 200;
+  color: darkslategray;
+}
+
+.flex-item-avatar-left {
+  background-image: url(../../assets/img/1zizah-cropped.JPG);
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.flex-item-avatar-right {
+  background-image: url(../../assets/img/eki.jpg);
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 5 0px;
+  }
+  .main {
+    order: 2;
+  }
+}
+
+@media (max-width: 1440px) {
+  .flex-item-wrapperbox-left {
+    width: 100%;
+    height: 100%;
+    padding: 8.5rem 2rem 2rem 3.5rem;
+  }
+
+  .flex-item-wrapperbox-right {
+    width: 100%;
+    height: 100%;
+    padding: 8.5rem 2rem 2rem 0.5rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .flex-item-wrapperbox-left {
+    padding: 5.5rem 2rem 2rem 3rem;
+  }
+
+  .flex-item-wrapperbox-right {
+    padding: 5.5rem 2rem 2rem 0rem;
+  }
+
+  .flex-item-textbox-right {
+    width: 82%;
+  }
+
+  .flex-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .flex-item {
+    margin: 0cm;
+    width: 50%;
+  }
+
+  .flex-item-1 {
+    height: 450px;
+  }
+
+  .flex-item-2 {
+    height: 450px;
+  }
+
+  .flex-item-name {
+    font-size: 1.7rem;
+    bottom: 2.2rem;
+  }
+
+  .flex-item-subname {
+    font-size: 0.85rem;
+    bottom: 1.7rem;
+  }
+
+  .flex-item-avatar-left {
+    width: 140px;
+    height: 140px;
+  }
+
+  .flex-item-avatar-right {
+    width: 140px;
+    height: 140px;
+  }
+
+  .main {
+    height: 530px;
+  }
+}
+
+@media (max-width: 799px) and (min-width: 449px) {
+  .flex-item-wrapperbox-left {
+    padding: 0.5rem 2rem 2rem 3rem;
+  }
+
+  .flex-item-wrapperbox-right {
+    padding: 0.5rem 2rem 2rem 0rem;
+  }
+
+  .flex-item-textbox-left {
+    width: 98%;
+  }
+
+  .flex-item-textbox-right {
+    width: 75%;
+  }
+
+  .flex-item-1 {
+    height: 350px;
+  }
+
+  .flex-item-2 {
+    height: 350px;
+    margin-top: -2px;
+  }
+
+  .flex-item-name {
+    font-size: 1.7rem;
+    bottom: 2.5rem;
+  }
+  .flex-item-subname {
+    font-size: 0.9rem;
+  }
+
+  .flex-item-textbox-right .flex-item-subname {
+    bottom: 0.1rem;
+  }
+
+  .main {
+    height: 430px;
+  }
+
+  .main-title {
+    height: 45px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 730px) {
+  .left-box {
+    order: 2;
+    flex: 100% 1;
+  }
+
+  .right-box {
+    order: 3;
+    flex: 100% 1;
+  }
+
+  .main {
+    height: 700px;
+  }
+}
+
+@media (max-width: 450px) {
+  .left-box {
+    order: 2;
+    flex: 100% 1;
+  }
+
+  .right-box {
+    order: 3;
+    flex: 100% 1;
+  }
+
+  .main {
+    height: 700px;
+  }
+
+  .main-title {
+    height: 40px;
+    font-size: 0.8rem;
+  }
+
+  .flex-item-1 {
+    height: 350px;
+  }
+
+  .flex-item-2 {
+    height: 350px;
+  }
+
+  .flex-item-wrapperbox-left {
+    padding: 0.5rem 2rem 2rem 1.8rem;
+  }
+
+  .flex-item-wrapperbox-right {
+    padding: 0.5rem 2rem 2rem 0.5rem;
+  }
+
+  .flex-item-name {
+    font-size: 1.7rem;
+    bottom: 2.8rem;
+  }
+
+  .flex-item-textbox-right .flex-item-subname {
+    bottom: 0.6rem;
+    width: 80%;
+  }
+}
+
+@media (max-width: 375px) {
+  .flex-item-1 {
+    height: 340px;
+  }
+
+  .flex-item-2 {
+    height: 340px;
+  }
+
+  .flex-item-textbox-right {
+    width: 68%;
+  }
+
+  .flex-item-wrapperbox-left {
+    padding: 0.5rem 2rem 2rem 3rem;
+  }
+
+  .flex-item-wrapperbox-right {
+    padding: 0 2rem 2rem 0.5rem;
+  }
+}
+
+@media (max-width: 330px) {
+  .flex-item-1 {
+    height: 270px;
+  }
+
+  .flex-item-2 {
+    height: 270px;
+  }
+
+  .flex-item-textbox-right {
+    width: 75%;
+  }
+
+  .flex-item-textbox-left .flex-item-subname {
+    font-size: 0.8rem;
+    bottom: 4rem;
+    width: 70%;
+  }
+
+  .flex-item-textbox-right .flex-item-subname {
+    font-size: 0.8rem;
+    bottom: 4rem;
+  }
+
+  .flex-item-wrapperbox-left {
+    padding: 0.5rem 2rem 0 1.8rem;
+  }
+
+  .flex-item-wrapperbox-right {
+    padding: 0 2rem 2rem 0.5rem;
+  }
+
+  .flex-item-name {
+    font-size: 1.4rem;
+    bottom: 6rem;
+  }
+
+  .flex-item-avatar-left {
+    width: 110px;
+    height: 110px;
+    top: 25%;
+  }
+
+  .flex-item-avatar-right {
+    width: 110px;
+    height: 110px;
+    top: 25%;
+  }
+}

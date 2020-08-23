@@ -1,0 +1,136 @@
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 200;
+  background-color: $color-primary-semidark;
+  padding: 5px;
+  width: 400px;
+  align-self: center;
+  color: whitesmoke;
+  box-shadow: 5px 5px $color-primary-side;
+  font-family: "IM Fell Great Primer", serif;
+}
+
+.times-container {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+  flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+
+  padding: 3rem 10rem 0 10rem;
+  margin: 0;
+  list-style: none;
+}
+
+.times-item {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.times-frame {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: $color-primary-semidark;
+  clip-path: polygon(
+    0% 0%,
+    0% 100%,
+    13% 12%,
+    89% 12%,
+    89% 87%,
+    7% 100%,
+    8% 100%,
+    100% 100%,
+    100% 0%
+  );
+  transform: rotate(-10deg);
+}
+
+.times-number {
+  line-height: 90px;
+  color: $color-primary-side;
+  font-size: 3em;
+  font-weight: bold;
+  transition: transform 0.2s ease-in-out;
+}
+
+.times-title {
+  font-size: 1.5em;
+  color: grey;
+  text-align: end;
+}
+
+.times-number:hover {
+  transform: scale(0.95) rotate(10deg);
+}
+
+.texture-bg {
+  height: 250px;
+}
+
+.section-gap-time {
+  padding: 1.5rem;
+  background-color: $color-cyan-light-2;
+}
+
+@media (max-width: 450px) {
+  .section-gap-time {
+    padding: 1rem;
+  }
+  .section-title {
+    font-size: 1.5rem;
+    width: 250px;
+    margin-bottom: 1rem;
+  }
+  .times-item {
+    width: 70px;
+    height: 70px;
+  }
+  .times-container {
+    padding: 0;
+  }
+  .times-frame {
+    width: 70px;
+    height: 70px;
+  }
+  .times-number {
+    line-height: 70px;
+    font-size: 2rem;
+  }
+  .times-title {
+    font-size: 1.5rem;
+  }
+  .texture-bg {
+    height: 200px;
+  }
+}
+
+@media (max-width: 330px) {
+  .times-item {
+    width: 60px;
+    height: 60px;
+  }
+  .times-frame {
+    width: 60px;
+    height: 60px;
+  }
+  .times-number {
+    line-height: 60px;
+    font-size: 2rem;
+  }
+  .texture-bg {
+    height: 180px;
+  }
+}

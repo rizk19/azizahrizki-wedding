@@ -1,0 +1,87 @@
+@import "../assets/scss/index";
+@import "AboutSection/about";
+@import "TimeSection/times";
+@import "PlaceSection/place";
+
+.header {
+  background-image: url(../assets/img/DSC01189.JPG);
+  background-attachment: fixed;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 60%;
+  transition: transform 0.5s, filter 1s ease-in-out;
+  filter: grayscale(120%) brightness(50%);
+  height: 750px;
+
+  &-text-box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+}
+
+.title-header {
+  font-family: "Great Vibes", cursive;
+  color: $color-primary-light-3;
+  font-size: 7rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+.side-title-header {
+  font-family: "Trocchi", serif;
+  color: $color-primary-semilight-3;
+  font-size: 2.5rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+.header:hover {
+  filter: grayscale(50%) brightness(50%);
+}
+
+@media (min-width: 810px) {
+  .header {
+    background-position: 100% 25%;
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    height: 500px;
+    background-position: 100% 50%;
+  }
+}
+
+@media (max-width: 799px) and (min-width: 449px) {
+  .header {
+    height: 400px;
+    background-position: 50% 50%;
+  }
+  .title-header {
+    font-size: 3rem;
+  }
+  .side-title-header {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .header {
+    background-size: 600px;
+    height: 300px;
+    background-position: 58% 0%;
+    &-text-box {
+      top: 25%;
+    }
+  }
+  .title-header {
+    font-size: 3rem;
+  }
+  .side-title-header {
+    font-size: 1.5rem;
+  }
+}
