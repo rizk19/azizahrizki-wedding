@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "942992d38199d3ae0e2957ef1eedd47c",
+    "revision": "02a33f1598ec18d84d79b6934d619878",
     "url": "/azizahrizki-wedding/index.html"
   },
   {
-    "revision": "61ddaa047f9082183b1f",
-    "url": "/azizahrizki-wedding/static/css/main.a7ac2289.chunk.css"
+    "revision": "2ad3bcc747699480daf3",
+    "url": "/azizahrizki-wedding/static/css/main.16ad1ae7.chunk.css"
   },
   {
     "revision": "9de9493fce6cdf839a51",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/azizahrizki-wedding/static/js/2.1a9f4e71.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "61ddaa047f9082183b1f",
+    "revision": "2ad3bcc747699480daf3",
     "url": "/azizahrizki-wedding/static/js/main.09ce540f.chunk.js"
   },
   {

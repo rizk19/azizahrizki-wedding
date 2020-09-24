@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/azizahrizki-wedding/precache-manifest.dd7e0c4fd4596908b5ea061000e2e485.js"
+  "/azizahrizki-wedding/precache-manifest.b049d115b398ad5324afcdfc2c2d69dc.js"
 );
 
 self.addEventListener('message', (event) => {
