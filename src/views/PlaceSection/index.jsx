@@ -7,6 +7,7 @@ const PlaceSection = () => {
                 <div className="place-wrapper-header">
                     <p className="place-title">Tempat Resepsi</p>
                     <div className="place-border-address">
+                        <h3 className="place-address-title">Masjid Bani Umar</h3>
                         <p type="text" disabled id="place-address" className="place-address" >Jalan Graha Bintaro Kav. GK 4 No. 2-4, Parigi Baru, Pondok Aren, South Tangerang City, Banten 15226</p>
                     </div>
                 </div>
