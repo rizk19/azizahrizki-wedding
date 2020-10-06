@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/azizahrizki-wedding/static/css/main.b9286596.chunk.css",
-    "main.js": "/azizahrizki-wedding/static/js/main.09ce540f.chunk.js",
-    "main.js.map": "/azizahrizki-wedding/static/js/main.09ce540f.chunk.js.map",
+    "main.css": "/azizahrizki-wedding/static/css/main.cd3b2dcf.chunk.css",
+    "main.js": "/azizahrizki-wedding/static/js/main.82b0042b.chunk.js",
+    "main.js.map": "/azizahrizki-wedding/static/js/main.82b0042b.chunk.js.map",
     "runtime-main.js": "/azizahrizki-wedding/static/js/runtime-main.45337c75.js",
     "runtime-main.js.map": "/azizahrizki-wedding/static/js/runtime-main.45337c75.js.map",
     "static/js/2.1a9f4e71.chunk.js": "/azizahrizki-wedding/static/js/2.1a9f4e71.chunk.js",
     "static/js/2.1a9f4e71.chunk.js.map": "/azizahrizki-wedding/static/js/2.1a9f4e71.chunk.js.map",
     "index.html": "/azizahrizki-wedding/index.html",
-    "precache-manifest.7059fa85c350a397408947c154a660d5.js": "/azizahrizki-wedding/precache-manifest.7059fa85c350a397408947c154a660d5.js",
+    "precache-manifest.aafb27baef6bfbafdcb554f4aebf2e4f.js": "/azizahrizki-wedding/precache-manifest.aafb27baef6bfbafdcb554f4aebf2e4f.js",
     "service-worker.js": "/azizahrizki-wedding/service-worker.js",
-    "static/css/main.b9286596.chunk.css.map": "/azizahrizki-wedding/static/css/main.b9286596.chunk.css.map",
+    "static/css/main.cd3b2dcf.chunk.css.map": "/azizahrizki-wedding/static/css/main.cd3b2dcf.chunk.css.map",
     "static/js/2.1a9f4e71.chunk.js.LICENSE.txt": "/azizahrizki-wedding/static/js/2.1a9f4e71.chunk.js.LICENSE.txt",
-    "static/media/index.scss": "/azizahrizki-wedding/static/media/frame-transparent-greeny-1side.a69faa2e.png"
+    "static/media/index.scss": "/azizahrizki-wedding/static/media/frame-transparent-greeny-1side.a69faa2e.png",
+    "static/media/footer.scss": "/azizahrizki-wedding/static/media/RA-Typography-Difference-01.e951ba45.png"
   },
   "entrypoints": [
     "static/js/runtime-main.45337c75.js",
     "static/js/2.1a9f4e71.chunk.js",
-    "static/css/main.b9286596.chunk.css",
-    "static/js/main.09ce540f.chunk.js"
+    "static/css/main.cd3b2dcf.chunk.css",
+    "static/js/main.82b0042b.chunk.js"
   ]
 }

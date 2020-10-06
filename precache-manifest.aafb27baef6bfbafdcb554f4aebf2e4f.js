@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f1de175d3e167215b1379e8106f42df8",
+    "revision": "a8d4cfe77ae4a23c19690df70039ecd1",
     "url": "/azizahrizki-wedding/index.html"
   },
   {
-    "revision": "0270ee004cface82476b",
-    "url": "/azizahrizki-wedding/static/css/main.b9286596.chunk.css"
+    "revision": "dc5f29914ac67d4be101",
+    "url": "/azizahrizki-wedding/static/css/main.cd3b2dcf.chunk.css"
   },
   {
     "revision": "9de9493fce6cdf839a51",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/azizahrizki-wedding/static/js/2.1a9f4e71.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0270ee004cface82476b",
-    "url": "/azizahrizki-wedding/static/js/main.09ce540f.chunk.js"
+    "revision": "dc5f29914ac67d4be101",
+    "url": "/azizahrizki-wedding/static/js/main.82b0042b.chunk.js"
   },
   {
     "revision": "09142e0c1581d4e26ae8",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "115e33fbe3afb6ddde48d3166dfc3cf0",
     "url": "/azizahrizki-wedding/static/media/DSC01189.115e33fb.JPG"
+  },
+  {
+    "revision": "e951ba455a1be4bdfac7f632b080d476",
+    "url": "/azizahrizki-wedding/static/media/RA-Typography-Difference-01.e951ba45.png"
   },
   {
     "revision": "7112982fcd0c359f6d4086cf5c98750d",
