@@ -1,9 +1,12 @@
 @import "../../assets/scss/index";
+
 .footer {
   background: $color-primary-dark;
   display: flex;
   position: relative;
   justify-content: center;
+  height: 6rem;
+  padding: 1rem;
   p {
     color: white;
   }
@@ -13,11 +16,59 @@
   }
 }
 
+.footer-entity {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin-left: 1rem;
+  border-left: 1px solid lightgray;
+  padding-left: 2rem;
+}
+
 .footer-title {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: green;
 }
 
 .footer-link {
   text-decoration: none;
+  transition: color 0.5s ease;
+  &:hover {
+    color: lawngreen;
+  }
+}
+
+.img-footer {
+  background-image: url(../../assets/img/RA-Typography-Difference-01.png);
+  width: 6rem;
+  height: 6rem;
+  background-size: cover;
+  border: 0px;
+  transform: scale(1.4);
+}
+
+.footer-caption {
+  color: lightgray;
+  width: 300px;
+  word-wrap: normal;
+  text-align: start;
+}
+
+@media (max-width: 799px) and (min-width: 449px) {
+  .img-footer {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 450px) {
+  .img-footer {
+    transform: scale(1);
+  }
+  .footer-caption {
+    width: 200px;
+    font-size: smaller;
+  }
+  .footer-title {
+    font-size: smaller;
+  }
 }
